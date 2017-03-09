@@ -1,0 +1,35 @@
+#version 330
+
+in vec4 point;
+in vec2 position;
+in vec4 variance;
+in vec2 difference;
+
+uniform mat4 camera;
+
+out vec2 diff;
+
+
+void main() {
+	float pi = 3.1415;
+
+	diff = difference;
+
+    mat4 scaleMatrix = mat4(1.0);
+	mat4 rotationMatrix = mat4(0.0);
+	rotationMatrix[0][0] = cos(difference.y*pi);
+	rotationMatrix[0][2] = -sin(difference.y*pi);
+	rotationMatrix[2][0] = sin(difference.y*pi);
+	rotationMatrix[1][1] = 1;
+	rotationMatrix[3][3] = 1;
+	rotationMatrix[2][2] = cos(difference.y*pi);
+
+    scaleMatrix[0][0] = 0.01*difference.x;
+    scaleMatrix[1][1] = 0.1*difference.x;
+    mat4 positionMatrix = mat4(1.0);
+    positionMatrix[3][0] = position.x;
+    positionMatrix[3][2] = position.y;
+	positionMatrix = positionMatrix * rotationMatrix; 
+
+	gl_Position = camera * (positionMatrix * scaleMatrix * point + variance * ((point.y * point.y) * difference.x));
+}
