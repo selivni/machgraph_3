@@ -1,19 +1,7 @@
 # Mash3_Template
-Template for 3rd task on computer graphics
+3rd task on computer graphics
 
-__Place your source files in "source" directory and headers in "include"__
-
-## Usage:
-
-1) Install appropriate libraries:
-
-> sudo apt-get install freeglut3-dev libglew-dev libglu1-mesa-dev
-
-3) Clone this repository with:
-
-> git clone https://github.com/BorisLestsov/Mash3_Template.git
-
-4) To compile everything run in the project directory:
+To compile everything run in the project directory:
 
 > make
 
