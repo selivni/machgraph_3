@@ -1,5 +1,8 @@
-# Mash3_Template
+# Mash3
 3rd task on computer graphics
+
+This program draws grass in 3-dimentional space and simulates the physical impact of the wind on it (wind is toggled by 'w' or 'r')
+buttons
 
 To compile everything run in the project directory:
 
