@@ -1,0 +1,9 @@
+h = step forward
+j = step backwards
+m = capture/release mouse
+a = toggle multisampling on/off
+w = toggle wind on/off
+shift+w = strengthen the wind (starts decreasing rapidly, press multiple times for visible effect)
+r = toggle wind on/off, random strength
+d = debug mode (don't remember what it does anymore, probably writes stuff in console)
+arrow keys = rotate camera (if you have no mouse/your rigth hand is busy)
