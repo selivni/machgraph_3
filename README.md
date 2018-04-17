@@ -14,7 +14,7 @@ __To run the project, go to bin and run:__
 
 ## Possible errors:
 
-If you get error:
+If you get an error:
 ```
 Shader: 0:1(10): error: GLSL 3.30 is not supported. Supported versions are: 1.10, 1.20, 1.30, 1.00 ES, and 3.00 ES
 
@@ -25,4 +25,6 @@ Then you sould add this line to the end of ".bashrc" file in your home directory
 export MESA_GL_VERSION_OVERRIDE="3.3COMPAT"
 ```
 
-If you your system does not support GLSL 3.10 - replace "shaders" directory and "main.cpp" with the ones from downgrade.
+If you your system does not support GLSL 3.10 - replace "shaders" directory and "main.cpp" with the ones from downgrade (which doesn't exist anymore)
+
+For more information about the task, check .pdf file (in Russian)
